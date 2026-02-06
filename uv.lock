@@ -12,6 +12,7 @@ members = [
     "cds-rdm",
     "cds-rdm-app",
 ]
+overrides = [{ name = "invenio-requests", git = "https://github.com/inveniosoftware/invenio-requests.git?rev=feature%2Fcomments-files" }]
 
 [[package]]
 name = "aiobotocore"
@@ -36,7 +37,7 @@ wheels = [
 
 [[package]]
 name = "aiobotocore"
-version = "3.1.1"
+version = "3.1.2"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
     "python_full_version >= '3.11'",
@@ -45,16 +46,16 @@ resolution-markers = [
 dependencies = [
     { name = "aiohttp", marker = "python_full_version >= '3.10'" },
     { name = "aioitertools", marker = "python_full_version >= '3.10'" },
-    { name = "botocore", version = "1.42.30", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
+    { name = "botocore", version = "1.42.42", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
     { name = "jmespath", marker = "python_full_version >= '3.10'" },
     { name = "multidict", marker = "python_full_version >= '3.10'" },
     { name = "python-dateutil", marker = "python_full_version >= '3.10'" },
     { name = "typing-extensions", marker = "python_full_version == '3.10.*'" },
     { name = "wrapt", version = "2.1.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/f6/bc/00ac3f44a66661fb28f2425b056d5bd202c2269a686ab0a683bb0e0516f0/aiobotocore-3.1.1.tar.gz", hash = "sha256:a19a36b930a041aa21553d67ae8a6bc464e107806eee60af3c71502f1009826c", size = 122530, upload-time = "2026-01-20T17:00:29.067Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a3/86/6b22e645d2f340b6c0f7164e57641bd926b9c08d73428e4962fb0f3ae71b/aiobotocore-3.1.2.tar.gz", hash = "sha256:d9b5bfff63df96a0ba78f7e5d10a063ab2dd8497e9c15ecf9d9660dafb853172", size = 122621, upload-time = "2026-02-05T10:21:37.434Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/67/84/d844b79acd9fe15ded60b614b7df04a12fad854ee1fbb8415d726ab1beeb/aiobotocore-3.1.1-py3-none-any.whl", hash = "sha256:a4e12a3bd099cd19dc2b2e9fe01a807131b46ebd0f83f509bda3cb243e988c32", size = 87667, upload-time = "2026-01-20T17:00:27.869Z" },
+    { url = "https://files.pythonhosted.org/packages/cd/22/4d16dca3bd1d6475a53063eb72150269cea1a0a201b55288b3402f61f119/aiobotocore-3.1.2-py3-none-any.whl", hash = "sha256:1141cec16c47cc3e466d89fcccc5c57291a3751a15488fe7fbaea8550f94f468", size = 87701, upload-time = "2026-02-05T10:21:36.183Z" },
 ]
 
 [[package]]
@@ -478,7 +479,7 @@ wheels = [
 
 [[package]]
 name = "botocore"
-version = "1.42.30"
+version = "1.42.42"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
     "python_full_version >= '3.11'",
@@ -489,9 +490,9 @@ dependencies = [
     { name = "python-dateutil", marker = "python_full_version >= '3.10'" },
     { name = "urllib3", version = "2.6.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/44/38/23862628a0eb044c8b8b3d7a9ad1920b3bfd6bce6d746d5a871e8382c7e4/botocore-1.42.30.tar.gz", hash = "sha256:9bf1662b8273d5cc3828a49f71ca85abf4e021011c1f0a71f41a2ea5769a5116", size = 14891439, upload-time = "2026-01-16T20:37:13.77Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/7d/96/4eca9755ca444402c46c73cc8ff252c8eb73ab0ccf35ca76d89e7b7820ac/botocore-1.42.42.tar.gz", hash = "sha256:cb75639f5ba7bf73b83ac18bcd87f07b7f484f302748da974dad2801a83a1d60", size = 14926585, upload-time = "2026-02-04T20:28:33.66Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/3d/8d/6d7b016383b1f74dd93611b1c5078bbaddaca901553ab886dcda87cae365/botocore-1.42.30-py3-none-any.whl", hash = "sha256:97070a438cac92430bb7b65f8ebd7075224f4a289719da4ee293d22d1e98db02", size = 14566340, upload-time = "2026-01-16T20:37:10.94Z" },
+    { url = "https://files.pythonhosted.org/packages/e6/51/aac7e419521d5519e13087a7198623655648c939822bd7f4bdc9ccbe07f9/botocore-1.42.42-py3-none-any.whl", hash = "sha256:1c9df5fc31e9073a9aa956271c4007d72f5d342cafca5f4154ea099bc6f83085", size = 14600186, upload-time = "2026-02-04T20:28:29.268Z" },
 ]
 
 [[package]]
@@ -565,7 +566,7 @@ dependencies = [
     { name = "invenio-preservation-sync" },
     { name = "lxml" },
     { name = "s3fs", version = "2025.10.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10'" },
-    { name = "s3fs", version = "2026.1.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
+    { name = "s3fs", version = "2026.2.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
     { name = "uwsgi" },
     { name = "uwsgi-tools" },
     { name = "uwsgitop" },
@@ -2087,15 +2088,15 @@ wheels = [
 
 [[package]]
 name = "fsspec"
-version = "2026.1.0"
+version = "2026.2.0"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
     "python_full_version >= '3.11'",
     "python_full_version == '3.10.*'",
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d5/7d/5df2650c57d47c57232af5ef4b4fdbff182070421e405e0d62c6cdbfaa87/fsspec-2026.1.0.tar.gz", hash = "sha256:e987cb0496a0d81bba3a9d1cee62922fb395e7d4c3b575e57f547953334fe07b", size = 310496, upload-time = "2026-01-09T15:21:35.562Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/51/7c/f60c259dcbf4f0c47cc4ddb8f7720d2dcdc8888c8e5ad84c73ea4531cc5b/fsspec-2026.2.0.tar.gz", hash = "sha256:6544e34b16869f5aacd5b90bdf1a71acb37792ea3ddf6125ee69a22a53fb8bff", size = 313441, upload-time = "2026-02-05T21:50:53.743Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/01/c9/97cc5aae1648dcb851958a3ddf73ccd7dbe5650d95203ecb4d7720b4cdbf/fsspec-2026.1.0-py3-none-any.whl", hash = "sha256:cb76aa913c2285a3b49bdd5fc55b1d7c708d7208126b60f2eb8194fe1b4cbdcc", size = 201838, upload-time = "2026-01-09T15:21:34.041Z" },
+    { url = "https://files.pythonhosted.org/packages/e6/ab/fb21f4c939bb440104cc2b396d3be1d9b7a9fd3c6c2a53d98c45b3d7c954/fsspec-2026.2.0-py3-none-any.whl", hash = "sha256:98de475b5cb3bd66bedd5c4679e87b4fdfe1a3bf4d707b151b3c07e58c9a2437", size = 202505, upload-time = "2026-02-05T21:50:51.819Z" },
 ]
 
 [[package]]
@@ -3061,7 +3062,7 @@ wheels = [
 
 [[package]]
 name = "invenio-previewer"
-version = "3.6.0"
+version = "3.7.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "charset-normalizer" },
@@ -3076,9 +3077,9 @@ dependencies = [
     { name = "nbconvert" },
     { name = "nbformat" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/40/2b/a2a88b5ef5dd45bcda9496dfd00b9f2488b01839bf63a698fd38e557f25f/invenio_previewer-3.6.0.tar.gz", hash = "sha256:12c2ecdf679e03dc3c5069f6b6945628071c2df1c2ed6d6be88fa82eba4ef0ab", size = 157603, upload-time = "2026-01-15T14:50:41.31Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/0d/c8/650e0c22c012cf91b7a35cfad060ab0be70e1c4fcf6ae89afe2f90358f75/invenio_previewer-3.7.0.tar.gz", hash = "sha256:d64bfc6dd5782c26acc84d3f6127a473d93062bde18237a1b2a9a9afe1615494", size = 158156, upload-time = "2026-02-06T09:57:53.303Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/3e/3b/5276a732ce9158fb923415006833f7e99c34eba590d786b47ad6e68576c8/invenio_previewer-3.6.0-py2.py3-none-any.whl", hash = "sha256:f253bbb1b63b11eddf18e7f0868f6091b886bf7a463e6e778d67dfc1d4bfdccd", size = 207239, upload-time = "2026-01-15T14:50:40.02Z" },
+    { url = "https://files.pythonhosted.org/packages/85/f0/25408f67a2a62b10a3bed1ece894ac36250a9e9441c836ab93c1dcfb99c9/invenio_previewer-3.7.0-py2.py3-none-any.whl", hash = "sha256:ed0104fc4d2a0a9a40c369ae86d415753de824cf17af9988cd1aaa750ff954d1", size = 207541, upload-time = "2026-02-06T09:57:52.049Z" },
 ]
 
 [[package]]
@@ -3249,16 +3250,12 @@ wheels = [
 
 [[package]]
 name = "invenio-requests"
-version = "11.3.0"
-source = { registry = "https://pypi.org/simple" }
+version = "11.2.3"
+source = { git = "https://github.com/inveniosoftware/invenio-requests.git?rev=feature%2Fcomments-files#1291ed0bfe5d19abf03d9e4b7772183dcc56ea9f" }
 dependencies = [
     { name = "invenio-records-resources" },
     { name = "invenio-theme" },
     { name = "invenio-users-resources" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/bd/2d/7c54ad22860bb2e0b62b5efa1437c8dc79dd14aa88098d870bfb62c01c97/invenio_requests-11.3.0.tar.gz", hash = "sha256:e0f755d0903949938e85cc9e940c0f8d13b38eec7dffc3339ff53fbc117464ea", size = 165987, upload-time = "2026-02-05T09:10:56.003Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/58/28/3fe6ad43fda4e27f83a65edef9c9cb425e361ef168cde599e504580d10bf/invenio_requests-11.3.0-py2.py3-none-any.whl", hash = "sha256:f2b41738e2200e47f0d9acbdc0387ac4f330d6253590eb7f0b5a62544ab93312", size = 369633, upload-time = "2026-02-05T09:10:54.287Z" },
 ]
 
 [[package]]
@@ -6843,20 +6840,20 @@ wheels = [
 
 [[package]]
 name = "s3fs"
-version = "2026.1.0"
+version = "2026.2.0"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
     "python_full_version >= '3.11'",
     "python_full_version == '3.10.*'",
 ]
 dependencies = [
-    { name = "aiobotocore", version = "3.1.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
+    { name = "aiobotocore", version = "3.1.2", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
     { name = "aiohttp", marker = "python_full_version >= '3.10'" },
-    { name = "fsspec", version = "2026.1.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
+    { name = "fsspec", version = "2026.2.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/97/f2/d6e725d4a037fe65fe341d3c16e7b6f3e69a198d6115c77b0c45dffaebe7/s3fs-2026.1.0.tar.gz", hash = "sha256:b7a352dfb9553a2263b7ea4575d90cd3c64eb76cfc083b99cb90b36b31e9d09d", size = 81224, upload-time = "2026-01-09T15:29:49.025Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/fa/be/392c8c5e0da9bfa139e41084690dd49a5e3e931099f78f52d3f6070105c6/s3fs-2026.2.0.tar.gz", hash = "sha256:91cb2a9f76e35643b76eeac3f47a6165172bb3def671f76b9111c8dd5779a2ac", size = 84152, upload-time = "2026-02-05T21:57:57.968Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/93/cf/0af92a4d3f36dd9ff675e0419e7efc48d7808641ac2b2ce2c1f09a9dc632/s3fs-2026.1.0-py3-none-any.whl", hash = "sha256:c1f4ad1fca6dd052ffaa104a293ba209772f4a60c164818382833868e1b1597d", size = 30713, upload-time = "2026-01-09T15:29:47.418Z" },
+    { url = "https://files.pythonhosted.org/packages/57/e1/64c264db50b68de8a438b60ceeb921b2f22da3ebb7ad6255150225d0beac/s3fs-2026.2.0-py3-none-any.whl", hash = "sha256:65198835b86b1d5771112b0085d1da52a6ede36508b1aaa6cae2aedc765dfe10", size = 31328, upload-time = "2026-02-05T21:57:56.532Z" },
 ]
 
 [[package]]
@@ -7403,11 +7400,11 @@ wheels = [
 
 [[package]]
 name = "types-dateparser"
-version = "1.2.2.20250809"
+version = "1.3.0.20260206"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/63/54/2d2b77d1beba5bdb7faeabc7d7f0b9b2f8e428f79f45a144ad7ab87d1a29/types_dateparser-1.2.2.20250809.tar.gz", hash = "sha256:a898f5527e6c34d213bc5d85254b8246d8b1e76239ed9243711198add0c8a29c", size = 15804, upload-time = "2025-08-09T03:15:11.298Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/f5/e0/72045089c4503d22f21f53f04898eb0cf48ee7fad3d80187e32069f9593b/types_dateparser-1.3.0.20260206.tar.gz", hash = "sha256:8d2ee287aa33f0b26fe8cc48cd8e28f958ada839b2db5a4e3f54371dfe77a696", size = 16516, upload-time = "2026-02-06T04:03:39.022Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/5d/5a/a5cf930804f639f5f1c58434613a1bbc1bd4641e29aec07444f316b41dff/types_dateparser-1.2.2.20250809-py3-none-any.whl", hash = "sha256:f12ae46abc3085e60e16fbe55730c5acbce980cbe3b176b17b08b4cef85850ef", size = 22140, upload-time = "2025-08-09T03:15:10.234Z" },
+    { url = "https://files.pythonhosted.org/packages/ec/31/2d8b6c693f015349885092173e604af2e480c3fd0a16cdb5ca97024238b0/types_dateparser-1.3.0.20260206-py3-none-any.whl", hash = "sha256:d6e5d33101b46d9cc14866f105806c80c9b8826492c75e9b323c8fc45ceb1390", size = 22963, upload-time = "2026-02-06T04:03:37.711Z" },
 ]
 
 [[package]]
